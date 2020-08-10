@@ -1,0 +1,28 @@
+1、通常将文件解压至 /usr/src
+
+2、安装必要依赖
+sudo apt-get install gcc make libncurses5-dev openssl libssl-dev 
+sudo apt-get install build-essential 
+sudo apt-get install pkg-config
+sudo apt-get install libc6-dev
+sudo apt-get install bison
+sudo apt-get install flex
+sudo apt-get install libelf-dev
+sudo apt-get install autoconf
+sudo apt-get install libtool
+
+3、准备编译
+make menuconfig
+
+4、save
+
+5、开始编译
+make -j8
+make modules_install
+
+6、安装
+make install
+
+7、编辑开机启动项
+设置默认内核
+sudo update-grub
