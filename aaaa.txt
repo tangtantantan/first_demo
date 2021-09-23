@@ -1,2 +1,0 @@
-今天是8月7号，早上好，现在练习一下github命令，git  add   git commit  -m
-git push
